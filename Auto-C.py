@@ -1,6 +1,6 @@
 import os
 import subprocess
-import AUT_CRT2
+import AUTYT2
 import time
 import sys
 from itertools import cycle
@@ -41,10 +41,10 @@ try:
         subprocess.run(["xdg-open", link])  # For Linux or macOS, this will open the URL in the default browser
 
     print("▶️ Running main function...")
-    AUT_CRT2.main()  # Assumes 'main' exists; will raise an error if it doesn't.
+    AUTYT2.main()  # Assumes 'main' exists; will raise an error if it doesn't.
 
 except ImportError as e:
     print("❌ Import error:", e)
 
 except AttributeError:
-    print("⚠️ 'main' function not found. Check available attributes:", dir(AUT_CRT2))
+    print("⚠️ 'main' function not found. Check available attributes:", dir(AUTYT2))
